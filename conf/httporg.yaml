@@ -1,0 +1,92 @@
+httpbin_get:
+  method: get
+  url: https://httpbin.org/get
+  params: {}
+  options: {}
+
+httpbin_post:
+  method: post
+  url: https://httpbin.org/post
+  params: {}
+  options: {}
+
+httpbin_patch:
+  method: patch
+  url: https://httpbin.org/patch
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
+
+httpbin_delete:
+  method: delete
+  url: https://httpbin.org/delete
+  params: {}
+  options: {}
+
+httpbin_put:
+  method: put
+  url: https://httpbin.org/put
+  params: {}
+  options: {}
+
+
+httpbin_status_get:
+  method: get
+  url: https://httpbin.org/status/200
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
+
+httpbin_status_patch:
+  method: patch
+  url: https://httpbin.org/status/300
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
+
+
+httpbin_request_info_headers:
+  method: get
+  url: https://httpbin.org/headers
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
+  
+httpbin_request_info_ip:
+  method: get
+  url: https://httpbin.org/ip
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
+  
+httpbin_request_info_UA:
+  method: get
+  url: https://httpbin.org/user-agent 
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
+
+httpbin_request_info_cache:
+  method: get
+  url: https://httpbin.org/cache/{value}
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
+  url_options:
+    value: '123'
+
+
+httpbin_basic_auth:
+  method: get
+  url: https://httpbin.org/basic-auth/root/root
+  params: {}
+  options: 
+    accept: application/json
+    user-agent: true
